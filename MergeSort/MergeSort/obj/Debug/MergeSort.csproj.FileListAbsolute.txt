@@ -1,0 +1,8 @@
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\bin\Debug\MergeSort.exe.config
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\bin\Debug\MergeSort.exe
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\bin\Debug\MergeSort.pdb
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\obj\Debug\MergeSort.csproj.AssemblyReference.cache
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\obj\Debug\MergeSort.csproj.SuggestedBindingRedirects.cache
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\obj\Debug\MergeSort.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\obj\Debug\MergeSort.exe
+C:\Users\hp\source\sorting-array-in-c-sharp\MergeSort\MergeSort\obj\Debug\MergeSort.pdb

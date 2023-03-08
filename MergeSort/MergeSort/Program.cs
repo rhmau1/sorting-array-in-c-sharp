@@ -10,7 +10,8 @@ namespace MergeSort
     {
         static void Main(string[] args)
         {
-
+            int[] nilai = { 66, 78, 98, 32, 45, 87 };
+            MergeSort(nilai);
         }
         
         public static void MergeSort(int[] bilangan)
@@ -18,7 +19,7 @@ namespace MergeSort
             Console.WriteLine("===SEBELUM==");
             foreach(int i in bilangan)
             {
-                Console.WriteLine($"{i} ");
+                Console.Write($"{i} ");
             }
 
             bilangan = pisahInt(bilangan);
@@ -26,7 +27,7 @@ namespace MergeSort
             Console.WriteLine("\n===SESUDAH==");
             foreach (int i in bilangan)
             {
-                Console.WriteLine($"{i} ");
+                Console.Write($"{i} ");
             }
         }
 
@@ -91,15 +92,36 @@ namespace MergeSort
                 //cek apakah sisi kiri dan kanan masih ada/belum dibandingkan
                 if (indexKiri < kiri.Length && indexKanan < kanan.Length)
                 {
+                    if (kiri[indexKiri] < kanan[indexKanan])
+                    {
+                        hasilGabung[indexHasilGabung] = kiri[indexKiri];
+                        indexHasilGabung++;
+                        indexKiri++;
+                    }
+                    else
+                    {
+                        hasilGabung[indexHasilGabung] = kanan[indexKanan];
+                        indexHasilGabung++;
+                        indexKanan++;
+                    }
 
                 }else if(indexKiri < kiri.Length)
                 {
                     //kalau hanya sisi kiri saja yang masih tersedia
-                }else if(indexKanan < kanan.Length)
-                {
-                     
+                    hasilGabung[indexHasilGabung] = kiri[indexKiri];
+                    indexHasilGabung++;
+                    indexKiri++;
                 }
-            }
+                else if(indexKanan < kanan.Length)
+                {
+                    hasilGabung[indexHasilGabung] = kanan[indexKanan];
+                    indexHasilGabung++;
+                    indexKanan++;
+                }
+            }//akhir while
+
+            //kembalikan nilai array gabung
+            return hasilGabung;
         }
     }
 }
